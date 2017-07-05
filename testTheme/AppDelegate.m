@@ -7,6 +7,9 @@
 //
 
 #import "AppDelegate.h"
+#import "ThemeConfigModel.h"
+#import "ThemeManager.h"
+#import "ViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +20,18 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    self.window.rootViewController = [[UINavigationController alloc]initWithRootViewController:[ViewController new]];
+    
+    if (![ThemeManager currentThemeTag]) {
+        [ThemeManager changeTheme:@"red"];
+    }else{
+        [ThemeManager changeTheme:[ThemeManager currentThemeTag]];
+    }
+    
+    
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 

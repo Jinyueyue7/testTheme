@@ -16,6 +16,11 @@
 		DD26DDB21F0CC0D900671386 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD26DDB01F0CC0D900671386 /* LaunchScreen.storyboard */; };
 		DD26DDBD1F0CC0D900671386 /* testThemeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DD26DDBC1F0CC0D900671386 /* testThemeTests.m */; };
 		DD26DDC81F0CC0D900671386 /* testThemeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DD26DDC71F0CC0D900671386 /* testThemeUITests.m */; };
+		DD26DDE21F0CD0AC00671386 /* secondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD26DDE11F0CD0AC00671386 /* secondViewController.m */; };
+		DD26DE051F0CE50100671386 /* ThemeConfigModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DD26DDFC1F0CE50100671386 /* ThemeConfigModel.m */; };
+		DD26DE061F0CE50100671386 /* ThemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DD26DDFE1F0CE50100671386 /* ThemeManager.m */; };
+		DD26DE091F0CE52E00671386 /* blue in Resources */ = {isa = PBXBuildFile; fileRef = DD26DE071F0CE52E00671386 /* blue */; };
+		DD26DE0A1F0CE52E00671386 /* red in Resources */ = {isa = PBXBuildFile; fileRef = DD26DE081F0CE52E00671386 /* red */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +58,14 @@
 		DD26DDC31F0CC0D900671386 /* testThemeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testThemeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD26DDC71F0CC0D900671386 /* testThemeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testThemeUITests.m; sourceTree = "<group>"; };
 		DD26DDC91F0CC0D900671386 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD26DDE01F0CD0AC00671386 /* secondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = secondViewController.h; sourceTree = "<group>"; };
+		DD26DDE11F0CD0AC00671386 /* secondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = secondViewController.m; sourceTree = "<group>"; };
+		DD26DDFB1F0CE50100671386 /* ThemeConfigModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThemeConfigModel.h; sourceTree = "<group>"; };
+		DD26DDFC1F0CE50100671386 /* ThemeConfigModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThemeConfigModel.m; sourceTree = "<group>"; };
+		DD26DDFD1F0CE50100671386 /* ThemeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThemeManager.h; sourceTree = "<group>"; };
+		DD26DDFE1F0CE50100671386 /* ThemeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThemeManager.m; sourceTree = "<group>"; };
+		DD26DE071F0CE52E00671386 /* blue */ = {isa = PBXFileReference; lastKnownFileType = folder; path = blue; sourceTree = "<group>"; };
+		DD26DE081F0CE52E00671386 /* red */ = {isa = PBXFileReference; lastKnownFileType = folder; path = red; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +116,7 @@
 		DD26DD9E1F0CC0D900671386 /* testTheme */ = {
 			isa = PBXGroup;
 			children = (
+				DD26DDF21F0CE50100671386 /* Theme */,
 				DD26DDA21F0CC0D900671386 /* AppDelegate.h */,
 				DD26DDA31F0CC0D900671386 /* AppDelegate.m */,
 				DD26DDA51F0CC0D900671386 /* ViewController.h */,
@@ -113,6 +127,8 @@
 				DD26DDB31F0CC0D900671386 /* Info.plist */,
 				DD26DDAB1F0CC0D900671386 /* testTheme.xcdatamodeld */,
 				DD26DD9F1F0CC0D900671386 /* Supporting Files */,
+				DD26DDE01F0CD0AC00671386 /* secondViewController.h */,
+				DD26DDE11F0CD0AC00671386 /* secondViewController.m */,
 			);
 			path = testTheme;
 			sourceTree = "<group>";
@@ -141,6 +157,19 @@
 				DD26DDC91F0CC0D900671386 /* Info.plist */,
 			);
 			path = testThemeUITests;
+			sourceTree = "<group>";
+		};
+		DD26DDF21F0CE50100671386 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				DD26DE071F0CE52E00671386 /* blue */,
+				DD26DE081F0CE52E00671386 /* red */,
+				DD26DDFB1F0CE50100671386 /* ThemeConfigModel.h */,
+				DD26DDFC1F0CE50100671386 /* ThemeConfigModel.m */,
+				DD26DDFD1F0CE50100671386 /* ThemeManager.h */,
+				DD26DDFE1F0CE50100671386 /* ThemeManager.m */,
+			);
+			path = Theme;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -252,8 +281,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD26DE091F0CE52E00671386 /* blue in Resources */,
 				DD26DDB21F0CC0D900671386 /* LaunchScreen.storyboard in Resources */,
 				DD26DDAF1F0CC0D900671386 /* Assets.xcassets in Resources */,
+				DD26DE0A1F0CE52E00671386 /* red in Resources */,
 				DD26DDAA1F0CC0D900671386 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -279,6 +310,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD26DDE21F0CD0AC00671386 /* secondViewController.m in Sources */,
+				DD26DE061F0CE50100671386 /* ThemeManager.m in Sources */,
+				DD26DE051F0CE50100671386 /* ThemeConfigModel.m in Sources */,
 				DD26DDA71F0CC0D900671386 /* ViewController.m in Sources */,
 				DD26DDAD1F0CC0D900671386 /* testTheme.xcdatamodeld in Sources */,
 				DD26DDA41F0CC0D900671386 /* AppDelegate.m in Sources */,
@@ -520,6 +554,7 @@
 				DD26DDCE1F0CC0D900671386 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DD26DDCF1F0CC0D900671386 /* Build configuration list for PBXNativeTarget "testThemeTests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +563,7 @@
 				DD26DDD11F0CC0D900671386 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DD26DDD21F0CC0D900671386 /* Build configuration list for PBXNativeTarget "testThemeUITests" */ = {
 			isa = XCConfigurationList;
@@ -536,6 +572,7 @@
 				DD26DDD41F0CC0D900671386 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

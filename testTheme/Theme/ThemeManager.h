@@ -1,12 +1,10 @@
-
-/*!
- *  @header LEETheme.h
- *  @brief  LEE主题管理
- *
- *  @author LEE
- *  @copyright    Copyright © 2016 - 2017年 lee. All rights reserved.
- *  @version    V1.1.5
- */
+//
+//  ThemeManager.h
+//  testTheme
+//
+//  Created by 伟运体育 on 2017/7/5.
+//  Copyright © 2017年 伟运体育. All rights reserved.
+//
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
